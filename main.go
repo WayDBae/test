@@ -15,6 +15,7 @@ func main() {
 		Password: "",
 		DB:       0,
 	})
+
 	//TESTING CONNECTION...
 	pong, err := client.Ping(context.Background()).Result()
 	if err != nil {
@@ -32,4 +33,5 @@ func main() {
 		fmt.Println(err)
 	}
 	fmt.Println(value)
+
 }
